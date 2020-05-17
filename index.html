@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="John Doe">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>TODo List</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body onload="tasks()">
+	<div class="container">
+		<div class="todo">
+			<h1>ToDoList</h1>
+			<div class="form">
+				<input id="task_name" type="text" name="task_name" placeholder="Enter task name...">
+				<input id="task_responsible" type="text" name="task_responsible" placeholder="Enter task maker...">
+				<input id="task_hours" type="text" name="task_hours" placeholder="Enter task duration...">
+				<button class="btn">Create</button>
+			</div>
+		</div>
+			<table id="my_table" style="width:100%;margin:25px 0 0 25px;"; >
+				<tr>
+					<th>TaskName</th>
+					<th>TaskResponsible</th> 
+					<th>Hours</th>
+					<th>Edit</th>
+					<th>Delete</th>
+				</tr>
+			</table>
+	</div>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
